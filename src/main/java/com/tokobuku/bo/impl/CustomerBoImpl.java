@@ -39,4 +39,9 @@ public class CustomerBoImpl implements CustomerBo {
     public void delete(int custId) {
         customerDao.delete(custId);
     }
+
+    @Override
+    public void batch(Customer customer) {
+        customerDao.batch(customer);
+    }
 }

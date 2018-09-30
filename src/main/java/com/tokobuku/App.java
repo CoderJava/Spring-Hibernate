@@ -33,5 +33,8 @@ public class App {
         customers = customerBo.findAllCustomers();
         System.out.println("data hapus: " + customers);
 
+        customerBo.batch(new Customer(5, "user unknown", "N/A", "na@gmail.com"));
+        customers = customerBo.findAllCustomers();
+        System.out.println("data batch: " + customers);
     }
 }

@@ -16,4 +16,6 @@ public interface CustomerDao {
 
     void delete(int custId);
 
+    void batch(Customer customer);
+
 }

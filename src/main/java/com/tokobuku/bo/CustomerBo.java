@@ -16,4 +16,6 @@ public interface CustomerBo {
 
     void delete(int custId);
 
+    void batch(Customer customer);
+
 }
